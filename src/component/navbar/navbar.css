@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.brandlogo {
+  width: 30%;
+}
+.brandLogoPic {
+  width: 40%;
+  height: 50%;
+  object-fit: cover;
+}
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.menuList {
+  flex: 2;
+  display: flex;
+  gap: 0.2rem;
+  justify-content: space-between;
+  list-style: none;
+  width: 70%;
+  align-items: center;
+}
+.menuLink {
+  text-decoration: none;
+  color: #1a638f;
+  font-weight: 600;
+}
+.menuIcons {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  /* margin-left: 0.1rem; */
+}
+.menuIcon:not(:last-child) {
+  padding: 0.5rem;
+  background-color: rgba(207, 206, 206, 0.438);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuPic {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}

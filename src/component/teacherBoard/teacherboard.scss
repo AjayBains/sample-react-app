@@ -1,0 +1,133 @@
+.teacherBoard {
+  background: rgba(211, 211, 211, 0.459);
+  //   width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.teacherDashboard {
+  background: white;
+  width: 75vw;
+  margin-top: 3rem;
+  min-height: 80vh;
+  border-radius: 10px;
+  display: flex;
+  padding: 1rem;
+
+  box-shadow: 0px 1px 20px 5px rgba(23, 22, 22, 0.23);
+  -webkit-box-shadow: 0px 1px 20px 5px rgba(23, 22, 22, 0.23);
+  -moz-box-shadow: 0px 1px 20px 5px rgba(23, 22, 22, 0.23);
+}
+.teacherboard__left {
+  flex: 1;
+}
+.teacher__pic {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.accountID {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  .accId {
+    color: #123c6d;
+    // font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 0.2rem;
+  }
+}
+// /////////BTNS//////////////////
+.teacher__buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn__text {
+  background-color: #67dd9c;
+}
+.btn__meet {
+  background-color: #009ff4;
+}
+.btn__ban {
+  background-color: #f52e24;
+}
+
+// div summary
+.teacher__box {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 15px -1px rgba(156, 156, 242, 0.75);
+  -webkit-box-shadow: 0px 1px 15px -1px rgba(156, 156, 242, 0.75);
+  -moz-box-shadow: 0px 1px 15px -1px rgba(156, 156, 242, 0.75);
+}
+.teacher__box--left {
+  h3 {
+    margin-bottom: 1rem;
+  }
+  & p {
+    margin-bottom: 0.5rem;
+    color: rgb(71, 132, 170);
+  }
+}
+
+.teacher__box--right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  .checkIcon {
+    background-color: rgba(144, 238, 144);
+    padding: 0.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  .online__time {
+    background-color: rgba(182, 240, 182, 0.356);
+    padding: 0.4rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .minsOnline {
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+    .online__tag {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgb(42, 105, 42);
+    }
+  }
+}
