@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import "./studentBoardRight.scss"
+import Profile from "../profile/Profile"
 
 const StudentBoardRight = () => {
     const [cat,SetCat]= useState('profile');
@@ -18,7 +19,8 @@ const StudentBoardRight = () => {
                 <div className="category 4"><p className ={ `corrections ${cat==='corrections'?"active":""}`}onClick ={click}>Corrections</p></div>
                 <div className="category 5"><p className ={ `courses ${cat==='courses'?"active":""}`}onClick ={click}>Enrolled Courses</p></div>
             </div>
-            {cat==="profile" && <h1 style ={{marginTop:"2rem",textAlign:"center"}}>Profile</h1>}
+            {/* {cat==="profile" && <h1 style ={{marginTop:"2rem",textAlign:"center"}}>Profile</h1>} */}
+            {cat==="profile" && <Profile/>}
             {cat==="chat" && <h1 style ={{marginTop:"2rem",textAlign:"center"}}>Chat</h1>}
             {cat==="notes" && <h1 style ={{marginTop:"2rem",textAlign:"center"}}>Notes</h1>}
             {cat==="corrections" && <h1 style ={{marginTop:"2rem",textAlign:"center"}}>Corrections</h1>}
